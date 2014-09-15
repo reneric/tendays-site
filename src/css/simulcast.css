@@ -207,7 +207,8 @@ select, option, textarea, input[type="text"], input[type="password"], input[type
   text-align: center;
   padding-top: 100px;
   padding-bottom: 50px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .footer {
   text-align: center;
@@ -231,6 +232,11 @@ select, option, textarea, input[type="text"], input[type="password"], input[type
   .footer img {
     display: none;
     padding: 15px 0; }
+    
+input[type=text]:focus, textarea:focus {
+  box-shadow: none;
+  border: 2px solid #78d3b6;
+}
 
 @media (min-width: 768px) {
   .pushed {
@@ -274,7 +280,7 @@ body {
   .main-section h1 {
     color: #232928;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px; }
   .main-section p {
@@ -301,10 +307,21 @@ body {
       border-radius: 0;
       border: 0;
       background-image: url("../img/base/overlay1.jpg");
+      background-color: #70d0af; 
       color: #fff;
       font-family: 'Open Sans';
       font-size: 20px;
-      padding: 18px; }
+      padding: 18px; 
+      }
+     .main-section form button:hover {   
+      background-color: #60BA9B;
+			background-image: none;
+			transition: 0.1s ease-in;
+			-o-transition: 0.1s ease-in;
+			-ms-transition: 0.1s ease-in;
+			-moz-transition: 0.1s ease-in;
+			-webkit-transition: 0.1s ease-in;
+			}
     .main-section form .form-group {
       margin-bottom: 32px;
       overflow: auto; }
@@ -349,7 +366,7 @@ body {
 
 @media (min-width: 768px) {
   .main-section h1 {
-    font-size: 55px;
+    font-size: 68px;
     margin-top: 85px;
     margin-bottom: 35px; }
   .main-section p {

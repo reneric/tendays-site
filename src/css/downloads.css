@@ -329,6 +329,13 @@ body {
       padding: 0 0 0 10px; }
   .main-section .download img {
     width: 100%; }
+  .main-section .download img:hover {
+    opacity: 0.8;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; } }  
+  
   .main-section .download .controls {
     margin: 15px auto 30px;
     overflow: auto; }
@@ -365,4 +372,9 @@ body {
     background-position: center -70px; }
     .main-section .avatar .controls {
       width: 156px;
-      font-size: 14px; } }
+      font-size: 14px; }
+    .col-sm-3{
+    	width: 16.6%;
+    }  
+      
+       }

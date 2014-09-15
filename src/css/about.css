@@ -347,7 +347,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.8em;
-    max-width: 1200px;
+    max-width: 940px;
     margin: 0 auto; }
   .between .pointer {
     width: 75px;
@@ -551,8 +551,9 @@ body {
     font-size: 24px; }
   .slide-5 .slides li .about {
     background-color: #fff;
+    opacity: 0.92;
     box-shadow: 0px 0px 1px #cdcdcd;
-    padding: 45px 0;
+    padding: 45px 20px 45px 0;
     text-align: left;
     margin-top: 20px; }
     .slide-5 .slides li .about img {
@@ -600,7 +601,7 @@ body {
     background-color: #232928;
     color: #fff; }
   .slide-5 .flex-direction-nav a:hover {
-    background-color: #000;
+    	background-color: #000;
       transition:         0.1s ease-in;
   		-o-transition:      0.1s ease-in;
  			-ms-transition:     0.1s ease-in;
@@ -620,6 +621,30 @@ body {
     text-align: center; }
     .slide-5 .flex-direction-nav .flex-next::before {
       content: '\f429'; }
+      
+   .slide-5 .about-steps{
+   	max-width: 600px;
+   	height: 120px;
+   	text-align: left;
+   	vertical-align: middle;
+   	font-family: 'Open Sans';
+		font-size: 36px;
+		font-weight: 300;
+		color: #232928;
+		margin: 0 auto;
+   }
+   .slide-5 .icon{
+		margin-right: 25px;
+   }
+.slide-5 .steps-heading {
+		color: #6d6e71;
+		font-family: 'Open Sans';
+		font-weight: 300;
+		font-size: 36px;
+		margin-top: -85px;
+		margin-left: 275px;
+}
+
 
 .slide-6 {
   text-align: center;
@@ -627,7 +652,7 @@ body {
   .slide-6 h2 {
     text-transform: uppercase;
     color: #232928;
-    font-size: 55px;
+    font-size: 68px;
     font-weight: 500;
     margin-top: 100px;
     margin-bottom: 25px; }
@@ -675,13 +700,13 @@ body {
   .between {
     padding: 40px; }
     .between h3 {
-      font-size: 55px; }
+      font-size: 68px; }
     .between p {
       font-size: 18px; }
 
   .slide-1 {
-    height: 928px;
-    padding-top: 20%; }
+    height: 820px;
+    padding-top: 200px; }
     .slide-1 .row h1 {
       font-size: 68px; }
     .slide-1 .row p {
@@ -691,7 +716,7 @@ body {
 
   .slide-2 .section {
     height: 1010px;
-    padding-top: 184px; }
+    padding-top: 100px; }
     .slide-2 .section p {
       font-size: 30px; }
     .slide-2 .section button {
@@ -727,10 +752,10 @@ body {
     top: 30px; }
 
   .slide-3 {
-    height: 770px; }
+    height: 700px; }
     .slide-3 .row > div {
       position: absolute;
-      height: 770px; }
+      height: 700px; }
       .slide-3 .row > div:hover {
         width: 27%; }
       .slide-3 .row > div:nth-child(2) {
@@ -742,8 +767,8 @@ body {
         .slide-3 .row > div:nth-child(4):hover {
           width: 25%; }
       .slide-3 .row > div .heading {
-        padding-top: 120px;
-        padding-bottom: 182px;
+        padding-top: 90px;
+        padding-bottom: 140px;
         font-size: 55px; }
       .slide-3 .row > div .content {
         font-size: 16px;
@@ -754,13 +779,14 @@ body {
         transition: 0.3s all; }
       .slide-3 .row > div .bg-image {
         background-size: auto;
-        height: 770px; }
+        height: 700px; }
 
   .slide-5 {
-    height: 990px; }
+    height: 850px; }
     .slide-5 h2 {
-      font-size: 55px;
-      margin-top: 106px; }
+      font-size: 68px;
+      margin-top: 70px;
+      margin-bottom: 30px; }
     .slide-5 .slides li > img {
       height: 96px;
       width: 96px;
@@ -783,3 +809,50 @@ body {
       margin-right: 8px; }
     .slide-5 .flex-direction-nav .flex-next::before {
       margin-left: 8px; } }
+      
+      
+/* JEREMY'S NEW MEDIA QUERIES  ------------------------------------------------ */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px){
+		
+		.slide-1 .row p{
+			font-weight: 400;
+			font-style: 18px;
+			line-height: 1.7em;
+		}
+		
+		.slide-5 .about-steps{
+			font-size: 18px;
+			height: 60px;
+			text-align: center;
+		}
+		.slide-5 .steps-heading {
+		color: #6d6e71;
+		font-family: 'Open Sans';
+		font-weight: 300;
+		font-size: 24px;
+		margin-top: 0px;
+		margin-left: 5px;
+		}
+		.slide-5 .icon{
+		display: none;
+   }
+   .slide-5 .slides li .about p{
+   	font-size: 14px;
+   	font-weight: 400;
+   }
+   
+   .slide-5 .flex-direction-nav a{
+   	margin-top: -133px;
+   }
+   .slide-5 .slides li .about .content{
+   	margin-left: 10px;
+   }
+   .slide-5 .slides li .about img{
+   	margin-left: 10px;
+   }
+
+}
+

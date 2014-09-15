@@ -171,7 +171,7 @@
                             <p>It’s a simple idea “drink water to give water”. Instead of spending money on beverages like coffee and soda, save your money, and use it to provide people clean water that don’t have it.</p>
                             <ul class="actions">
                                 <li class="watch"><a href="#"><span class="icon">&#87;</span> Watch The Story</a></li>
-                                <li class="pledge"><a href="#"><span class="icon">&#217;</span> Take The Pledge</a></li>
+                                <li class="pledge"><a class="btn-home" href="#"><span class="icon">&#217;</span> Take The Pledge</a></li>
                             </ul>
                         </div>
                     </div>
@@ -225,19 +225,12 @@
             <section class="slide slide-3 no-one-page no-padding">
                 <div class="container-fluid">
                     <div class="row">
+                    
                         <div class="col-xs-4 profile">
                             <div class="overlay"></div>
-                            <video id="video-1" class="video-js vjs-default-skin"
+                            <video id="video-7" class="video-js vjs-default-skin"
                                 data-setup='{ "controls": false, "preload": "none" }'>
-                                <source src="vid/video1.mp4" type='video/mp4'>
-                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-                            </video>
-                        </div>
-                        <div class="col-xs-4 profile">
-                            <div class="overlay"></div>
-                            <video id="video-2" class="video-js vjs-default-skin"
-                                data-setup='{ "controls": false, "preload": "none" }'>
-                                <source src="vid/video2.mp4" type='video/mp4'>
+                                <source src="vid/video7.mp4" type='video/mp4'>
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
                             </video>
                         </div>
@@ -249,6 +242,14 @@
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
                             </video>
                         </div>
+                        <div class="col-xs-4 static-photo">
+                            <div class="overlay"></div>
+                            <div class="fade-in" data-location="#">
+                                <p>"Getting a well and having clean water for domestic use, for cooking and washing, is invaluable. We used to get water from a stream down in the valley."
+                                      <span>- Cecile Kandinga, Ruhango Resident since 1964</span></p>
+                                <!-- <a href="#">Learn More</a> -->
+                            </div>
+                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-4 profile">
@@ -274,6 +275,14 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-xs-4 static-photo">
+                            <div class="overlay"></div>
+                            <div class="fade-in" data-location="#">
+                                <p>"My favorite part of teaching is seeing my students grow up, to become important."
+                                    <span>-Agnes Musabimbana, 3rd Grade Math Teacher</span></p>
+                                <!-- <a href="#">Learn More</a> -->
+                            </div>
+                         </div>
                         <div class="col-xs-4 profile">
                             <div class="overlay"></div>
                             <video id="video-6" class="video-js vjs-default-skin"
@@ -282,14 +291,7 @@
                                 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
                             </video>
                         </div>
-                        <div class="col-xs-4 profile">
-                            <div class="overlay"></div>
-                            <video id="video-7" class="video-js vjs-default-skin"
-                                data-setup='{ "controls": false, "preload": "none" }'>
-                                <source src="vid/video7.mp4" type='video/mp4'>
-                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-                            </video>
-                        </div>
+                        
                         <div class="col-xs-4 profile">
                             <div class="overlay"></div>
                             <video id="video-8" class="video-js vjs-default-skin"
@@ -560,7 +562,7 @@
                             <div class="profile-change">
                                 <div class="row">
                                     <div class="col-sm-9 col-sm-offset-2">
-                                        <p class="arrow">Change your facebook profile photo to show your support for clean water!</p>
+                                        <p class="arrow">Change your Facebook profile photo to show your support for clean water!</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -574,12 +576,16 @@
                                 <span class="flag facebook-flag"></span>
                                 <span class="flag twitter-flag"></span>
                             </div>
-                            <button class="view-kit-button">Get Resources Kit</button>
+                            <a href="downloads.html" class="view-kit-button get-resouces-link">Get Resources Kit</a>
                         </div>
                         <div class="col-sm-4 social-bar not-mobile">
-                            <div class="fb-like-box facebook-widget" data-href="https://www.facebook.com/the10days" data-width="400px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                            <div class="row facebook-widget">
+                                <div class="col-xs-12">
+                                  <div class="fb-like-box facebook-widget" data-href="https://www.facebook.com/the10days" data-width="384px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                                </div>
+                            </div>
                             <!--
-<div class="row facebook-widget">
+                                <div class="row facebook-widget">
                                 <div class="top">
                                     <img src="img/home/profile-pic.png" alt="" class="profile-img">
                                     <div class="info">
@@ -604,17 +610,13 @@
                                     </ul>
                                 </div>
                             </div>
--->
+                            -->
                             <div class="row twitter-widget">
                                 <div class="col-xs-12">
                                     <p class="icon"><span class="genericon genericon-twitter"></span></p>
                                     <p class="tweet">We set a goal to raise enough money for 5 communities, apparently God had bigger plans. $147,760 for 7 communities!!</p>
                                     <div class="bottom">
                                         <p class="tweet-owner">@10Days</p>
-                                        <div class="actions">
-                                            <a href="#" class="retweet"><span class="glyphicon glyphicon-retweet"></span></a>
-                                            <a href="#"><span class="twitter-action-1"><img src="img/home/twitter-action-1.png" alt=""></span></a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -649,7 +651,7 @@
                     </div>
                     <div class="row map">
                         <!--
-<div class="col-xs-12 col-md-4 location">
+                        <div class="col-xs-12 col-md-4 location">
                             <div class="image"></div>
                             <div class="content">
                                 <p><span>GPS: </span>12.983667, -1.955139</p>
@@ -657,10 +659,30 @@
                                 <button>Learn How Wells Are Built</button>
                             </div>
                         </div>
--->
+                        -->
                         <div class="col-xs-12 map-section">
                             <img class="ruhango-map" src="img/ruhango.jpg" alt=""/>
+                            <a href="#KabajaII" class="map-wells well-Kabaja2"><img src="img/pin.png" alt=""/>
+                              <div class="well-html">
+                              	<img src="img/10days-well.jpg" alt=""/>
+                              </div><!-- .well-html -->
+                            </a>
                             <a href="#Kavuma" class="map-wells well-kavuma"><img src="img/pin.png" alt=""/>
+                              <div class="well-html">
+                              	<img src="img/10days-well.jpg" alt=""/>
+                              </div><!-- .well-html -->
+                            </a>
+                            <a href="#Nayamiyaga" class="map-wells well-nayamiyaga"><img src="img/pin.png" alt=""/>
+                              <div class="well-html">
+                              	<img src="img/10days-well.jpg" alt=""/>
+                              </div><!-- .well-html -->
+                            </a>
+                            <a href="#Kanaba" class="map-wells well-kanaba"><img src="img/pin.png" alt=""/>
+                              <div class="well-html">
+                              	<img src="img/10days-well.jpg" alt=""/>
+                              </div><!-- .well-html -->
+                            </a>
+                            <a href="#Burima" class="map-wells well-burima"><img src="img/pin.png" alt=""/>
                               <div class="well-html">
                               	<img src="img/10days-well.jpg" alt=""/>
                               </div><!-- .well-html -->
@@ -676,7 +698,7 @@
                         <p>Celebrating the end of the 10 Days and Water for Rwanda.</p>
                         <div class="col-xs-10 col-xs-offset-1 foundation">
                             <img src="img/home/day-11-ribbon.png" alt="">
-                            <p class="name">Donald Miller <span>&</span><br />John Mark Mcmillan</p>
+                            <p class="name">Donald Miller <span>&</span><br />John Mark McMillan</p>
                             <div class="little-border"></div>
                             <p class="time">Live Simulcast Streaming Here<br />7:30 pm CST 11/19/14</p>
                             <button>Register</button>
@@ -703,7 +725,7 @@
                             <li><span class="hash">#10days</span></li>
                         </ul>
                         <img src="img/base/logo.jpg" alt="">
-                        <p class="copyright"><a href="#">PRIVACY POLICY</a> | &copy; Living Water Interational</p>
+                        <p class="copyright"><a href="#">PRIVACY POLICY</a> | &copy; Living Water International</p>
                     </div>
                 </div>
             </section>
