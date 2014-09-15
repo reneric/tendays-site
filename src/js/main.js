@@ -34,7 +34,7 @@
 				}, 200);
 			},
 			afterMove: function(index, nextIndex) {
-				console.log(index);
+				//console.log(index);
 				if (index === 1) {
 					$('.topnav').css('top', '-1px');
 					$('.firstnav').css('opacity', 0);
@@ -177,7 +177,7 @@
 	});
 
 	$('.slide-2 input').on('blur', function(e) {
-		$(this).parent().css('opacity', 0.4).removeClass('active');
+		$(this).parent().css('opacity', 0.3).removeClass('active');
 		e.preventDefault();
 	});
 
@@ -194,30 +194,30 @@
       video.pause();
 	});
 	 
-  meet_people.height();
-  meet_people.width();
-  
   var videoRatio = 334 / 593; //Video originalHeight divided be video originalWidth
-  var myPlayer = null;
 
   function myPlayer_followBrowsersize() {
-      tmp_windowRatio = $(window).height() / $(window).width();
-      if (videoRatio > tmp_windowRatio) {
-          tmp_height = Math.round($(window).width() * videoRatio);
-          myPlayer.size($(window).width(), tmp_height);
-          $('#video-home-player').css({
-              'marginTop' : -Math.round((tmp_height - $(window).height()) / 2),
-              'marginLeft' : 0
-          });
-      } else {
-          tmp_width = Math.round($(window).height() * (1 / videoRatio));
-          myPlayer.size(tmp_width, $(window).height());
-          $('#video-home-player').css({
-              'marginTop' : 0,
-              'marginLeft' : -Math.round((tmp_width - $(window).width()) / 2)
-          });
+      var vidWrapperHeight = meet_people.height();
+      var vidWrapperWidth = meet_people.width();
+      var actualVideoHeight = videoRatio * vidWrapperWidth;
+      
+      var videoTestRatio = vidWrapperHeight - actualVideoHeight;
+      console.log(videoTestRatio);
+      
+      if (videoTestRatio > 0 && videoTestRatio < 80) {
+          meet_people.find('.video-js').css({'width':'120%','left':'-10%'});
+      } 
+      else if (videoTestRatio > 80){ 
+        meet_people.find('.video-js').css({'width':'140%','left':'-20%'});
+      } 
+      else {
+          meet_people.find('.video-js').css({'width':'100%','left':'0'});
       }
   }
+  setTimeout(function(){
+  	   myPlayer_followBrowsersize();             
+  },1000);
+  
   $(window).bind('resize', myPlayer_followBrowsersize);
 	
 
