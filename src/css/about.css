@@ -599,6 +599,13 @@ body {
     width: 60px;
     background-color: #232928;
     color: #fff; }
+  .slide-5 .flex-direction-nav a:hover {
+    background-color: #000;
+      transition:         0.1s ease-in;
+  		-o-transition:      0.1s ease-in;
+ 			-ms-transition:     0.1s ease-in;
+  		-moz-transition:    0.1s ease-in;
+  		-webkit-transition: 0.1s ease-in; }
   .slide-5 .flex-direction-nav .flex-prev, .slide-5 .flex-direction-nav .flex-next {
     opacity: 1 !important; }
     .slide-5 .flex-direction-nav .flex-prev::before, .slide-5 .flex-direction-nav .flex-next::before {
