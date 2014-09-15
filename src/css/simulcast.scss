@@ -1,0 +1,165 @@
+@import 'base';
+
+body {
+	background-image: url("../img/home/button-overlay1.jpg");
+}
+
+.footer {
+	img {
+		display: inline
+	}
+}
+
+.main-section {
+	background-image: url('../img/simulcast/bg.jpg');	
+	
+	h1 {
+		color: #232928;
+		font-size:30px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+	
+	p {
+		color:#6d6e71;
+		font-family: 'Open Sans';
+		font-weight: 300;
+		margin-top:20px;
+		letter-spacing: 1px;
+	}
+
+	form {
+		margin:25px auto;
+		max-width: 742px;
+		input {
+			box-shadow: none;
+			border: 1px solid #c7c6c4;
+			-webkit-appearance: none;
+			font-size: 26px;
+			border-radius: 0;
+			height: 74px;
+			padding: 6px 12px 0;
+			color:#3A3A3A;
+			font-size:15px;
+		}
+		
+		button {
+			width:100%;
+			border-radius: 0;
+			border:0;
+			background-image: url('../img/base/overlay1.jpg');
+			color:#fff;
+			font-family: 'Open Sans';
+			font-size: 20px;
+			padding:18px;
+		}
+
+		.form-group {
+			margin-bottom: 32px;
+			overflow: auto;
+		}
+	}
+
+	.countdown {
+		display: none;
+		p {
+			margin-top: 75px;
+			margin-bottom: 33px;
+			color: #6d6e71;
+			text-transform: uppercase;
+			font-family: 'Open sans';
+			font-size: 18px;
+			font-weight: 600;
+		}
+
+		.clock {
+			margin: 0 auto;
+			width: 740px;
+			
+			.dots {
+				display: inline-block;
+				float:left;
+				div {
+					background-color: #6d6e71;
+					height:9px;
+					width:9px;
+					display: block;
+				}
+
+				.top-dot {
+					margin-top: 40px;
+					margin-bottom: 18px;
+				}
+
+				.bottom-dot {
+
+				}
+			}
+
+			.time-group {
+				max-width: 261px;
+				margin: 0 4px;
+				float:left;
+				div {
+					display: inline-block;
+					min-width: 77px;
+					min-height: 113px;
+					margin:0 4px;
+					padding-top:15px;
+					background-image: url('../img/base/overlay1.jpg');
+					color:#fff;
+					font-size: 70px;
+					border-radius: 4px;
+
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.main-section {
+
+		h1 {
+			font-size: 55px;
+			margin-top:85px;
+			margin-bottom: 35px;
+		}
+
+		p {
+			font-size: 16px;
+			margin-bottom: 60px;
+		}
+
+		form {
+			input {
+				padding: 6px 32px 0;
+			}
+
+			button {
+				max-width:320px;
+				margin-top: 20px;
+				margin-bottom: 250px;
+			}
+			.two-on-row {
+				input {
+					width:48%;
+					display: inline-block;
+
+					&:nth-child(1) {
+						float:left;
+					}
+
+					&:nth-child(2) {
+						float: right;
+					}
+				}
+			}
+		}
+
+		.countdown {
+			display: block;
+		}
+	}
+}

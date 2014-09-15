@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600italic,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/genericons.css">
+        <link rel="stylesheet" href="css/flipclock.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/about.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="topnav navbar navbar-default page-nav" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="24.148 18.934 247.338 113.65"
+                             enable-background="new 24.148 18.934 247.338 113.65" xml:space="preserve">
+                            <path fill="#222929" d="M80.968,18.934h-56.82v56.82c0,31.391,25.431,56.83,56.82,56.83c31.38,0,56.82-25.439,56.82-56.83
+                                C137.788,44.374,112.348,18.934,80.968,18.934z M70.178,103.673h-7.27V58.363h-0.15c-1.63,2.16-3.1,3.551-6.03,5.801v-7.271
+                                c1.771-1.319,5.95-6.569,6.95-9.051h6.5V103.673z M105.208,90.374c0,10.05-2.32,13.76-11.53,13.76c-9.2,0-11.52-3.71-11.52-13.76
+                                v-29.23c0-10.051,2.319-13.761,11.52-13.761c9.21,0,11.53,3.71,11.53,13.761V90.374z"/>
+                            <path fill="#222929" d="M93.678,52.944c-4.25,0-4.25,3.479-4.25,6.96v31.7c0,3.479,0,6.96,4.25,6.96c4.26,0,4.26-3.479,4.26-6.96
+                                v-31.7C97.938,56.423,97.938,52.944,93.678,52.944z"/>
+                            <g>
+                                <path fill="#222929" d="M161.931,47.876h12.435c12.513,0,13.516,4.172,13.516,20.391v16.604c0,14.287-2.549,18.768-14.751,18.768
+                                    h-11.199L161.931,47.876L161.931,47.876z M169.654,97.151h3.707c5.716,0,6.796-3.012,6.796-12.589V65.409
+                                    c0-8.265-0.849-11.045-7.413-11.045h-3.09V97.151L169.654,97.151z"/>
+                                <path fill="#222929" d="M202.26,47.876h8.961l11.353,55.763h-7.724l-2.55-14.211h-12.048l-2.549,14.211h-7.723L202.26,47.876z
+                                     M201.411,82.94h9.81l-4.789-26.877h-0.154L201.411,82.94z"/>
+                                <path fill="#222929" d="M217.49,47.876h7.723l6.721,23.479h0.153l7.724-23.479h6.797l-10.734,32.9v22.861h-7.725v-22.86
+                                    L217.49,47.876z"/>
+                                <path fill="#222929" d="M246.926,87.498h7.725v4.556c0,3.707,1.391,6.025,4.479,6.025c4.096,0,5.1-2.781,5.1-6.41
+                                    c0-4.711-0.233-6.257-8.265-14.211c-4.944-4.943-9.037-9.424-9.037-16.99c0-9.115,4.249-13.054,12.666-13.054
+                                    c4.173,0,7.183,1.392,9.037,3.089c1.312,1.235,2.24,3.168,2.24,7.105v5.251h-7.261v-4.4c0-3.167-1.312-5.021-4.326-5.021
+                                    c-3.165,0-4.633,1.777-4.633,6.103c0,3.785,0.771,6.102,7.877,13.515c7.57,7.878,8.959,10.582,8.959,17.302
+                                    c0,8.727-3.397,13.746-12.588,13.746c-7.106,0-11.973-3.012-11.973-9.963V87.498L246.926,87.498z"/>
+                            </g>
+                            <image xlinks:href="img/base/navbar-ico.png" src="img/base/navbar-ico.png" alt="">
+                        </svg>
+                    </a>
+                </div>
+                <div class="day-counter">
+                    <div class="top">
+                        <span class="int">106</span>
+                        <span class="days-left">Days Left</span>
+                    </div>
+                    <div class="clearfix"><span class="until">Until 10 Days 2014</span></div>
+                </div>
+                <button class="navbar-toggle navbar-right">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="buttons navbar-right">
+                    <button>Join 10 Days</button>
+                    <button>Donate</button>
+                </div>
+            </div>
+        </nav>
+        <div id="sidebar">
+            <span class="genericon genericon-close-alt close"></span>
+            <ul class="pages">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About 10 Days</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Simulcast</a></li>
+                <li><a href="#">Donate Now</a></li>
+            </ul>
+            <div class="bottom">
+                <ul class="social">
+                    <li><span class="genericon genericon-facebook-alt"></span></li>
+                    <li><span class="genericon genericon-twitter"></span></li>
+                    <li><span class="genericon genericon-youtube"></span></li>
+                    <li><span class="email">&#224;</span></li>
+                </ul>
+                <p><a href="#" class="privacy">Privacy Policy</a></p>
+                <p>&copy; 2014 Living Water International</p>
+            </div>
+        </div>
+        <!-- Add your site or application content here -->
+        <div id="main">
+            <div class="slide-1 container-fluid">
+                <div class="row">
+                    <h1>What is the 10 days?</h1>
+                    <p>The 10 Days was started in 2007 by three college students who wanted their friends to see that together they could change the world. Today, participants from across the United States come together to give up every beverage but water from Nov. 10 - Nov. 19th and donate what they save to providing Rwandans with clean water.</p>
+                    <button>Commit to 10 days</button>
+                </div>
+            </div>
+            <div class="between">
+                <h3>what is the goal?</h3>
+                <p>The purpose of the 10 days is two fold:</p>
+                <div class="pointer"></div>
+            </div>
+            <div class="slide-2 container-fluid">
+                <div class="row">
+                    <div class="section first col-xs-12 col-sm-6">
+                        <p><span class="int">1.</span> Challenge students to think about how their choices matter.</p>
+                        <button>I Want To Join 10 Days</button>
+                    </div>
+                    <div class="section second col-xs-12 col-sm-6">
+                        <p><span class="int">2.</span> Challenge students to think about how their choices matter.</p>
+                        <button>I Want To Donate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="between">
+                <h3>why water?</h3>
+                <p>Helping communities create sustainable water, sanitation, hygiene, and Christian witness programs in partnership with local churches is just the best way we've found to do that. Why? Because the water crisis affects poverty, women, health and education—and for us it's a spiritual issue.</p>
+                <div class="pointer"></div>
+            </div>
+            <div class="slide-3 container-fluid">
+                <div class="row">
+                    <div class="frame col-xs-12 col-sm-3">
+                        <div class="bg-image"></div>
+                        <p class="heading">Water<br /><span class="equals">=</span><br />Safety</p>
+                        <p class="content">Many women spend 20 hours per week collecting water, some walking 7 miles a day, often for contaminatted water. Too often the walk is not safe for them physically. It is women and the children they raise who suffer most without water, and who benefit most from access to it.</p>
+                    </div>
+                    <div class="frame col-xs-12 col-sm-3">
+                        <div class="bg-image"></div>
+                        <p class="heading">Water<br /><span class="equals">=</span><br />Health</p>
+                        <p class="content">Water-related diseases cause 2.2 million deaths a year; every day, diarrhea takes the lives of 2,000 children in Africa—more than any other single cause of death. Safe water, a toilet, and clean hands could prevent 90% of these deaths.</p>
+                    </div>
+                    <div class="frame col-xs-12 col-sm-3">
+                        <div class="bg-image"></div>
+                        <p class="heading">Water<br /><span class="equals">=</span><br />Education</p>
+                        <p class="content">Globally, water-related diseases steal 443 million school days a year. Roundworm, whipworm, and hookworm stunt growth, cause debilitating anemia, and follow kids into the classroom, shrinking cognitive potential. Illness causes absenteeism and early drop-out. Simple solutions can keep kids in school.</p>
+                    </div>
+                    <div class="frame col-xs-12 col-sm-3">
+                        <div class="bg-image"></div>
+                        <p class="heading">Water<br /><span class="equals">=</span><br />The Gospel</p>
+                        <p class="content">There's hope. In the past 20 years 2 billion people have gained access to safe drinking water—but that's not the best story we have to tell. For us water is a picture of living water—the good news that God wants to transform people, communities, and the whole world through the person of Jesus Christ.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-4 container-fluid">
+                <div class="row">
+                    <div class="message col-xs-12">
+                        <p class="heading">783 million people lack access to an improved source of drinking water.</p>
+                        <p>That's 1 in 9 of us. In the places we work, it's more like 1 in 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-5 container-fluid">
+                <div class="row">
+                    <h2>How we implement wells</h2>
+                    <div class="col-xs-12 section-slider">
+                        <ul class="slides">
+                            <li>
+                                <img class="icon" src="img/about/step2-icon.png" alt="">
+                                <p>Step 2:</p>
+                                <h3>Health & Hygiene</h3>
+                                <div class="col-xs-12 col-sm-6 col-sm-offset-3 about">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-1 avatar">
+                                            <img src="img/about/person.jpg" alt="">
+                                        </div>
+                                        <div class="col-xs-12 col-md-8 col-md-offset-1 content">
+                                            <p class="heading">meet moses</p>
+                                            <p>Moses first started working for Living Water Kenya in 2005 and in 2009 he joined the Living Water Rwanda team...</p>
+                                            <button type="button" data-toggle="modal" data-target="#myModal">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="icon" src="img/about/step3-icon.png" alt="">
+                                <p>Step 3:</p>
+                                <h3>Sustainability</h3>
+                                <div class="col-xs-12 col-sm-6 col-sm-offset-3 about">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-1 avatar">
+                                            <img src="img/about/person.jpg" alt="">
+                                        </div>
+                                        <div class="col-xs-12 col-md-8 col-md-offset-1 content">
+                                            <p class="heading">meet moses</p>
+                                            <p>Moses first started working for Living Water Kenya in 2005 and in 2009 he joined the Living Water Rwanda team...</p>
+                                            <button type="button" data-toggle="modal" data-target="#myModal">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="icon" src="img/about/step4-icon.png" alt="">
+                                <p>Step 4:</p>
+                                <h3>Church Mobilization</h3>
+                                <div class="col-xs-12 col-sm-6 col-sm-offset-3 about">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-1 avatar">
+                                            <img src="img/about/person.jpg" alt="">
+                                        </div>
+                                        <div class="col-xs-12 col-md-8 col-md-offset-1 content">
+                                            <p class="heading">meet moses</p>
+                                            <p>Moses first started working for Living Water Kenya in 2005 and in 2009 he joined the Living Water Rwanda team...</p>
+                                            <button type="button" data-toggle="modal" data-target="#myModal">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="icon" src="img/about/step1-icon.png" alt="">
+                                <p>Step 1:</p>
+                                <h3>Water Solutions</h3>
+                                <div class="col-xs-12 col-sm-6 col-sm-offset-3 about">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-1 avatar">
+                                            <img src="img/about/person.jpg" alt="">
+                                        </div>
+                                        <div class="col-xs-12 col-md-8 col-md-offset-1 content">
+                                            <p class="heading">meet moses</p>
+                                            <p>Moses first started working for Living Water Kenya in 2005 and in 2009 he joined the Living Water Rwanda team...</p>
+                                            <button type="button" data-toggle="modal" data-target="#myModal">Read More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-6 container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>working in ruhango</h2>
+                        <p>The Ruhango District is located in the Southern Province of Rwanda. It’s about 242 square miles and is home to more than 300,000 people. All funds raised from the 10 Days go to funding Living Water International’s ongoing work in this area.</p>
+                    </div>
+                </div>
+                <div class="picture-slider">
+                    <ul class="slides">
+                        <li><img src="img/about/imgSlide1.jpg" alt=""></li>
+                        <li><img src="img/about/imgSlide2.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row footer">
+                    <ul class="social">
+                        <li><span class="genericon genericon-facebook-alt"></span></li>
+                        <li><span class="genericon genericon-twitter"></span></li>
+                        <li><span class="genericon genericon-youtube"></span></li>
+                        <li><span class="email">&#224;</span></li>
+                        <li><span class="hash">#10days</span></li>
+                    </ul>
+                    <img src="img/base/logo.jpg" alt="">
+                    <p class="copyright"><a href="#">PRIVACY POLICY</a> | &copy; Living Water Interational</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal">
+            <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true" class="genericon genericon-close-alt close-text"></span>
+                <span class="sr-only">Close</span>
+            </button>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="col-xs-12 col-md-6 photo-container moses">
+                                <div class="photo"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 content">
+                                <h3>Meet Moses</h3>
+                                <p>Moses first started working for Living Water Kenya in 2005 and in 2009 he joined the Living Water Rwanda team as the Project Coordinator. Moses spends a lot of time in the field with the drilling team, managing each drilling site and over seeing the mechanics.</p>
+
+                                <p>A typical day for Moses starts at 6 am as he gathers the team, ensures the mechanics on the drilling rig are functioning properly, and loads up the trucks for the days work.  Before a new borehole is drilled, he confirms that each drilling site scouted by the community engagement coordinator is accessible by the drilling rig truck.</p>
+
+                                <p>As the head driller, Moses oversees the rest of the drilling team, making sure all equipment is being used properly and all safety precautions are practiced. After a borehole is completed, he completes the report for the new water source, often ending his day around 10 pm. Moses may work long days, but he loves his job and the work he gets to be a part of within the communities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <script src="bower_components/jquery-ui/ui/slider.js"></script>
+        <script src="js/vendor/jquery.flexslider-min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/base.js"></script>
+        <script src="js/about.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

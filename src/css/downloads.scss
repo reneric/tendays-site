@@ -1,0 +1,174 @@
+@import 'base';
+
+body {
+	background-image: url("../img/home/button-overlay1.jpg");
+}
+
+.footer {
+	img {
+		display: inline
+	}
+}
+
+.main-section {
+	background-image: url('../img/downloads/bg.jpg');
+	background-color: #f9f6f2;
+	background-size: contain;
+	background-position: top center;
+	color:#000;
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 36px;
+		font-weight: 600;
+		letter-spacing: 3px;
+		padding-bottom: 15px;
+		color:#232928;
+	}
+
+	h2 {
+		font-size:45px;
+		margin-top:60px;
+		color:#232928;
+		font-weight: 600;
+		text-transform:uppercase;
+	}
+
+	p {
+		color:#727064;
+		font-family: 'Open Sans';
+		font-size:15px;
+		margin-bottom:74px;
+		letter-spacing: 1px;
+
+		a {
+			color:#6acfae;
+			font-weight: 600;
+		}
+	}
+	
+
+	.menu-container {
+		border-bottom: 1px solid #e6e4d5;
+		.menu {
+			list-style:none;
+			padding: 30px 0 15px 0;
+
+			li {
+				display: inline-block;
+				margin:0 6px;
+
+				a {
+					font-family: 'Open Sans';
+					font-weight: 300;
+					text-transform: uppercase;
+					color: #727064;
+					letter-spacing: 2px;
+					font-size: 13px;
+					padding-bottom: 6px;
+				}
+
+				a:hover, .active {
+					color: #6acfae;
+					text-decoration: none;
+					border-bottom:4px solid #6acfae;
+				}
+			}
+		}
+	}
+
+	.download {
+		a {
+			text-transform: uppercase;
+			color: #6acfae;
+			font-family: 'Open Sans';
+			font-weight: 600;
+			padding: 0 10px;
+			
+			&:first-child {
+				padding:0 10px 0 0;
+			}
+
+			&:last-child {
+				padding:0 0 0 10px;
+			}
+		}
+		
+		img {
+			width:100%;
+		}
+
+		.controls {
+			margin: 15px auto 30px;
+			overflow: auto;
+		}
+	}
+
+	.avatar {
+		.controls {
+			width: 156px;
+
+			a {
+				border-right: 1px solid #bfbfc0;
+				display: inline-block;
+				float: left;
+
+				&:last-child {
+					border:0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.main-section {
+		h1 {
+			padding-top: 212px;
+			font-size: 56px;
+		}
+
+		h2 {
+			font-size: 55px;
+			margin-top:111px;
+			margin-bottom: 20px;
+		}
+
+		.menu-container {
+			.menu {
+				padding: 30px 0;
+				li {
+					margin: 0 50px;
+					a {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
+		.download {
+			.controls {
+				margin:30px auto
+			}
+		}
+
+		.avatar {
+			.controls {
+				font-size: 9px;
+				width: 107px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.main-section {
+		background-position: center -70px;
+		.avatar {
+			.controls {
+				width: 156px;
+				font-size: 14px;
+			}
+		}
+	}
+}

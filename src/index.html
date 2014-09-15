@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/onepage-scroll/onepage-scroll.css">
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/genericons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<link href="http://vjs.zencdn.net/4.7/video-js.css" rel="stylesheet">
+		<script src="http://vjs.zencdn.net/4.7/video.js"></script>
+    </head>
+    <body class="no-one-page-body">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=115537661870973&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="topnav navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="24.148 18.934 247.338 113.65"
+                             enable-background="new 24.148 18.934 247.338 113.65" xml:space="preserve">
+                            <path fill="#222929" d="M80.968,18.934h-56.82v56.82c0,31.391,25.431,56.83,56.82,56.83c31.38,0,56.82-25.439,56.82-56.83
+                                C137.788,44.374,112.348,18.934,80.968,18.934z M70.178,103.673h-7.27V58.363h-0.15c-1.63,2.16-3.1,3.551-6.03,5.801v-7.271
+                                c1.771-1.319,5.95-6.569,6.95-9.051h6.5V103.673z M105.208,90.374c0,10.05-2.32,13.76-11.53,13.76c-9.2,0-11.52-3.71-11.52-13.76
+                                v-29.23c0-10.051,2.319-13.761,11.52-13.761c9.21,0,11.53,3.71,11.53,13.761V90.374z"/>
+                            <path fill="#222929" d="M93.678,52.944c-4.25,0-4.25,3.479-4.25,6.96v31.7c0,3.479,0,6.96,4.25,6.96c4.26,0,4.26-3.479,4.26-6.96
+                                v-31.7C97.938,56.423,97.938,52.944,93.678,52.944z"/>
+                            <g>
+                                <path fill="#222929" d="M161.931,47.876h12.435c12.513,0,13.516,4.172,13.516,20.391v16.604c0,14.287-2.549,18.768-14.751,18.768
+                                    h-11.199L161.931,47.876L161.931,47.876z M169.654,97.151h3.707c5.716,0,6.796-3.012,6.796-12.589V65.409
+                                    c0-8.265-0.849-11.045-7.413-11.045h-3.09V97.151L169.654,97.151z"/>
+                                <path fill="#222929" d="M202.26,47.876h8.961l11.353,55.763h-7.724l-2.55-14.211h-12.048l-2.549,14.211h-7.723L202.26,47.876z
+                                     M201.411,82.94h9.81l-4.789-26.877h-0.154L201.411,82.94z"/>
+                                <path fill="#222929" d="M217.49,47.876h7.723l6.721,23.479h0.153l7.724-23.479h6.797l-10.734,32.9v22.861h-7.725v-22.86
+                                    L217.49,47.876z"/>
+                                <path fill="#222929" d="M246.926,87.498h7.725v4.556c0,3.707,1.391,6.025,4.479,6.025c4.096,0,5.1-2.781,5.1-6.41
+                                    c0-4.711-0.233-6.257-8.265-14.211c-4.944-4.943-9.037-9.424-9.037-16.99c0-9.115,4.249-13.054,12.666-13.054
+                                    c4.173,0,7.183,1.392,9.037,3.089c1.312,1.235,2.24,3.168,2.24,7.105v5.251h-7.261v-4.4c0-3.167-1.312-5.021-4.326-5.021
+                                    c-3.165,0-4.633,1.777-4.633,6.103c0,3.785,0.771,6.102,7.877,13.515c7.57,7.878,8.959,10.582,8.959,17.302
+                                    c0,8.727-3.397,13.746-12.588,13.746c-7.106,0-11.973-3.012-11.973-9.963V87.498L246.926,87.498z"/>
+                            </g>
+                            <image xlinks:href="img/base/navbar-ico.png" src="img/base/navbar-ico.png" alt="">
+                        </svg>
+                    </a>
+                </div>
+                <div class="day-counter">
+                    <div class="top">
+                        <span class="int">106</span>
+                        <span class="days-left">Days Left</span>
+                    </div>
+                    <div class="clearfix"><span class="until">Until 10 Days 2014</span></div>
+                </div>
+                <button class="navbar-toggle navbar-right">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="buttons navbar-right">
+                    <button>Join 10 Days</button>
+                    <button>Donate</button>
+                </div>
+            </div>
+        </nav>
+        <div id="sidebar">
+            <span class="genericon genericon-close-alt close"></span>
+            <ul class="pages">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About 10 Days</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Simulcast</a></li>
+                <li><a href="#">Donate Now</a></li>
+            </ul>
+            <div class="bottom">
+                <ul class="social">
+                    <li><span class="genericon genericon-facebook-alt"></span></li>
+                    <li><span class="genericon genericon-twitter"></span></li>
+                    <li><span class="genericon genericon-youtube"></span></li>
+                    <li><span class="email">&#224;</span></li>
+                </ul>
+                <p><a href="#" class="privacy">Privacy Policy</a></p>
+                <p>&copy; 2014 Living Water International</p>
+            </div>
+        </div>
+        <!-- Add your site or application content here -->
+        <div id="main">
+            <section class="slide slide-1 no-one-page">
+                <video id="home-bg" class="video-js vjs-default-skin"
+                    data-setup='{ "controls": false, "autoplay": true, "loop": true }'>
+                    <source src="vid/home-bg.mp4" type='video/mp4'>
+                    <source src="vid/home-bg.webm" type='video/webm'>
+                    <source src="vid/home-bg.ogv" type='video/ogv'>
+                    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                </video>
+                <nav class="firstnav topnav navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a href="#">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="24.148 18.934 247.338 113.65"
+                             enable-background="new 24.148 18.934 247.338 113.65" xml:space="preserve">
+                            <path fill="#222929" d="M80.968,18.934h-56.82v56.82c0,31.391,25.431,56.83,56.82,56.83c31.38,0,56.82-25.439,56.82-56.83
+                                C137.788,44.374,112.348,18.934,80.968,18.934z M70.178,103.673h-7.27V58.363h-0.15c-1.63,2.16-3.1,3.551-6.03,5.801v-7.271
+                                c1.771-1.319,5.95-6.569,6.95-9.051h6.5V103.673z M105.208,90.374c0,10.05-2.32,13.76-11.53,13.76c-9.2,0-11.52-3.71-11.52-13.76
+                                v-29.23c0-10.051,2.319-13.761,11.52-13.761c9.21,0,11.53,3.71,11.53,13.761V90.374z"/>
+                            <path fill="#222929" d="M93.678,52.944c-4.25,0-4.25,3.479-4.25,6.96v31.7c0,3.479,0,6.96,4.25,6.96c4.26,0,4.26-3.479,4.26-6.96
+                                v-31.7C97.938,56.423,97.938,52.944,93.678,52.944z"/>
+                            <g>
+                                <path fill="#222929" d="M161.931,47.876h12.435c12.513,0,13.516,4.172,13.516,20.391v16.604c0,14.287-2.549,18.768-14.751,18.768
+                                    h-11.199L161.931,47.876L161.931,47.876z M169.654,97.151h3.707c5.716,0,6.796-3.012,6.796-12.589V65.409
+                                    c0-8.265-0.849-11.045-7.413-11.045h-3.09V97.151L169.654,97.151z"/>
+                                <path fill="#222929" d="M202.26,47.876h8.961l11.353,55.763h-7.724l-2.55-14.211h-12.048l-2.549,14.211h-7.723L202.26,47.876z
+                                     M201.411,82.94h9.81l-4.789-26.877h-0.154L201.411,82.94z"/>
+                                <path fill="#222929" d="M217.49,47.876h7.723l6.721,23.479h0.153l7.724-23.479h6.797l-10.734,32.9v22.861h-7.725v-22.86
+                                    L217.49,47.876z"/>
+                                <path fill="#222929" d="M246.926,87.498h7.725v4.556c0,3.707,1.391,6.025,4.479,6.025c4.096,0,5.1-2.781,5.1-6.41
+                                    c0-4.711-0.233-6.257-8.265-14.211c-4.944-4.943-9.037-9.424-9.037-16.99c0-9.115,4.249-13.054,12.666-13.054
+                                    c4.173,0,7.183,1.392,9.037,3.089c1.312,1.235,2.24,3.168,2.24,7.105v5.251h-7.261v-4.4c0-3.167-1.312-5.021-4.326-5.021
+                                    c-3.165,0-4.633,1.777-4.633,6.103c0,3.785,0.771,6.102,7.877,13.515c7.57,7.878,8.959,10.582,8.959,17.302
+                                    c0,8.727-3.397,13.746-12.588,13.746c-7.106,0-11.973-3.012-11.973-9.963V87.498L246.926,87.498z"/>
+                            </g>
+                            <image xlinks:href="img/base/navbar-ico.png" src="img/base/navbar-ico.png" alt="">
+                        </svg>
+                            </a>
+                        </div>
+                        <div class="day-counter">
+                            <div class="top">
+                                <span class="int">106</span>
+                                <span class="days-left">Days Left</span>
+                            </div>
+                            <div class="clearfix"><span class="until">Until 10 Days 2014</span></div>
+                        </div>
+                        <button class="navbar-toggle navbar-right">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="buttons navbar-right">
+                            <button>Join 10 Days</button>
+                            <button>Donate</button>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 wrapper">
+                            <p class="date">NOVEMBER 10-19, 2014</p>
+                            <img src="img/home/header-text.png" alt="">
+                            <p>It’s a simple idea “drink water to give water”. Instead of spending money on beverages like coffee and soda, save your money, and use it to provide people clean water that don’t have it.</p>
+                            <ul class="actions">
+                                <li class="watch"><a href="#"><span class="icon">&#87;</span> Watch The Story</a></li>
+                                <li class="pledge"><a href="#"><span class="icon">&#217;</span> Take The Pledge</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-2 no-one-page">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-7 album-art">
+                            <img src="img/home/ep-logo.png" alt="">
+                        </div>
+                        <div class="col-xs-12 col-md-5 sign-up">
+                            <img src="img/home/date-banner.png" alt="">
+                            <h2>Drink Water, <br /><span>Give Water.</span></h2>
+                            <p class="subtext">100% of the money raised through the 10 Days goes directly to building wells in Africa.</p>
+                            <form role="form">
+                              <div class="form-group">
+                                <div class="icon">
+                                    <span>&#80;</span>
+                                </div>
+                                <input type="text" class="form-control" id="nameField" placeholder="Name">
+                              </div>
+                              <div class="form-group">
+                                <div class="icon">
+                                    <span class="email">&#224;</span>
+                                </div>
+                                <input type="email" class="form-control" id="emailField" placeholder="Email Address">
+                              </div>
+                              <div class="form-group bottom">
+                                <div class="icon">
+                                    <span>&#214;</span>
+                                </div>
+                                <select class="form-control">
+                                    <option>Sign Me Up As...</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <div class="drop"></div>
+                              </div>
+                              <button type="submit" class="add-account btn btn-default">Add My Name</button>
+                              <button type="submit" class="facebook btn btn-default">Connect With Facebook</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-bar"><p>Are you a leader at your school? <span><a href="/simulcast.html">Host your own event.</a></span></p></div>
+            </section>
+            <section class="slide slide-3 no-one-page no-padding">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-4 profile">
+                            <div class="overlay"></div>
+                            <video id="video-1" class="video-js vjs-default-skin"
+                                data-setup='{ "controls": false, "preload": "none" }'>
+                                <source src="vid/video1.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                        <div class="col-xs-4 profile">
+                            <div class="overlay"></div>
+                            <video id="video-2" class="video-js vjs-default-skin"
+                                data-setup='{ "controls": false, "preload": "none" }'>
+                                <source src="vid/video2.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                        <div class="col-xs-4 profile">
+                            <div class="overlay"></div>
+                            <video id="video-3" class="video-js vjs-default-skin"
+                                data-setup='{ "controls": false, "preload": "none" }'>
+                                <source src="vid/video3.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 profile">
+                            <div class="overlay"></div>
+                            <video id="video-4" class="video-js vjs-default-skin"
+                                data-setup='{ "controls": false, "preload": "none" }'>
+                                <source src="vid/video4.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="front">
+                                <img src="img/home/ruhango-banner.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xs-4 profile">
+                            <div class="overlay"></div>
+                            <video id="video-5" class="video-js vjs-default-skin"
+                                data-setup='{ "controls": false, "preload": "none" }'>
+                                <source src="vid/video5.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 profile">
+                            <div class="overlay"></div>
+                            <video id="video-6" class="video-js vjs-default-skin"
+                                data-setup='{ "controls": false, "preload": "none" }'>
+                                <source src="vid/video6.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                        <div class="col-xs-4 profile">
+                            <div class="overlay"></div>
+                            <video id="video-7" class="video-js vjs-default-skin"
+                                data-setup='{ "controls": false, "preload": "none" }'>
+                                <source src="vid/video7.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                        <div class="col-xs-4 profile">
+                            <div class="overlay"></div>
+                            <video id="video-8" class="video-js vjs-default-skin"
+                                data-setup='{ "controls": false, "preload": "none" }'>
+                                <source src="vid/video8.mp4" type='video/mp4'>
+                                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-4 no-one-page">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="wrapper">
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <h3>How Many Beverages Did You Drink Today?</h3>
+                            </div>
+                            <div class="col-xs-12">
+                                <ul>
+                                    <li>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             class="drink-1 active" viewBox="0 0 230.599 233.904" enable-background="new 0 0 230.599 233.904"
+                                             xml:space="preserve">
+                                            <g id="Layer_1">
+                                                <path class="glass" d="M228.593,2.855c-1.445-1.582-3.488-2.484-5.631-2.486L7.662,0C7.658,0,7.654,0,7.65,0
+                                                    c-2.139,0-4.18,0.895-5.627,2.467C0.57,4.042-0.152,6.156,0.027,8.291l18.348,218.301c0.332,3.957,3.639,7.002,7.609,7.01
+                                                    l177.857,0.303c0.006,0,0.01,0,0.014,0c3.965,0,7.275-3.031,7.621-6.982L230.57,8.685C230.757,6.55,230.041,4.435,228.593,2.855z
+                                                     M200.81,173.292c-9.648,2.834-37.291,9.402-86.005,9.318c-48.625-0.084-75.996-6.723-85.578-9.596L15.971,15.314l198.632,0.34
+                                                    L200.81,173.292z"/>
+                                            </g>
+                                            <g id="Layer_2">
+                                                <path class="drink-fluid" d="M32.672,66.736l7.803,92.834c12.877,2.994,37.004,6.977,74.352,7.041h0.902
+                                                    c36.949,0,60.988-3.885,73.867-6.816l8.143-93.059H32.672z M62.75,150.136c-0.172,0.014-0.342,0.021-0.51,0.021
+                                                    c-3.086,0-5.709-2.367-5.973-5.498l-4.973-59.168c-0.277-3.303,2.174-6.205,5.477-6.482c3.303-0.275,6.203,2.174,6.48,5.477
+                                                    l4.975,59.168C68.504,146.957,66.051,149.859,62.75,150.136z"/>
+                                            </g>
+                                            <image xlink:href="img/home/drinks/1.png" src="img/home/drinks/1.png" alt="">
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 class="drink-2" viewBox="0 0 218.893 290.932" enable-background="new 0 0 218.893 290.932"
+                                                 xml:space="preserve">
+                                            <g id="Layer_1">
+                                                <g>
+                                                    <path class="glass" d="M165.698,69.387H7.65c-2.156,0-4.213,0.91-5.662,2.508c-1.45,1.596-2.159,3.729-1.953,5.875
+                                                        l19.842,206.244c0.378,3.922,3.674,6.918,7.615,6.918h118.364c3.941,0,7.237-2.996,7.614-6.918L173.312,77.77
+                                                        c0.207-2.146-0.502-4.279-1.951-5.875C169.91,70.297,167.854,69.387,165.698,69.387z M138.907,275.631H34.441L16.072,84.688
+                                                        h141.205L138.907,275.631z"/>
+                                                    <path class="glass" d="M211.244,0.111L146.291,0c-0.047,0-0.092,0.006-0.137,0.006c-0.154,0.002-0.307,0.012-0.459,0.023
+                                                        c-0.109,0.008-0.219,0.018-0.328,0.029c-0.129,0.016-0.256,0.037-0.381,0.059c-0.131,0.021-0.26,0.043-0.387,0.072
+                                                        c-0.104,0.023-0.205,0.053-0.31,0.078c-0.141,0.039-0.281,0.078-0.42,0.125c-0.092,0.029-0.18,0.062-0.27,0.098
+                                                        c-0.143,0.053-0.281,0.105-0.419,0.166c-0.094,0.041-0.184,0.086-0.275,0.131c-0.127,0.062-0.252,0.125-0.373,0.193
+                                                        c-0.104,0.059-0.205,0.121-0.305,0.186c-0.104,0.064-0.207,0.125-0.307,0.195c-0.114,0.078-0.222,0.162-0.333,0.248
+                                                        c-0.08,0.064-0.164,0.125-0.243,0.191c-0.113,0.096-0.221,0.197-0.33,0.299c-0.07,0.068-0.143,0.133-0.209,0.203
+                                                        c-0.102,0.104-0.197,0.211-0.294,0.32c-0.07,0.082-0.143,0.162-0.209,0.246c-0.081,0.102-0.157,0.205-0.233,0.311
+                                                        s-0.15,0.211-0.221,0.32c-0.059,0.092-0.116,0.186-0.173,0.281c-0.076,0.131-0.151,0.266-0.222,0.4
+                                                        c-0.021,0.043-0.045,0.08-0.066,0.121l-23.438,48.043c-0.255,0.523-0.438,1.062-0.567,1.607l16.824,0.027l18.854-38.646
+                                                        l60.157,0.104c4.232,0.008,7.666-3.418,7.674-7.65S215.477,0.117,211.244,0.111z"/>
+                                                </g>
+                                            </g>
+                                            <g id="Layer_2">
+                                                <path class="drink-fluid" d="M30.194,106.174l15.147,157.457h82.664l15.148-157.457H30.194z M48.664,142.328
+                                                    c-0.717-1.523-0.062-3.338,1.462-4.055l23.351-10.986c1.522-0.717,3.339-0.062,4.057,1.463l10.984,23.348
+                                                    c0.717,1.523,0.062,3.34-1.461,4.057l-23.351,10.986c-1.522,0.715-3.34,0.062-4.057-1.461L48.664,142.328z M99.014,235.416
+                                                    l-23.158,11.383c-1.511,0.742-3.338,0.121-4.08-1.391L60.391,222.25c-0.742-1.512-0.119-3.338,1.393-4.082l23.158-11.383
+                                                    c1.511-0.744,3.338-0.121,4.08,1.391l11.385,23.158C101.148,232.846,100.525,234.672,99.014,235.416z M122.354,177.125
+                                                    l-10.429,23.602c-0.681,1.541-2.481,2.238-4.021,1.557L84.3,191.854c-1.539-0.68-2.237-2.48-1.556-4.02l10.428-23.605
+                                                    c0.682-1.539,2.48-2.234,4.021-1.555l23.604,10.43C122.336,173.783,123.034,175.582,122.354,177.125z"/>
+                                            </g>
+                                            <image xlink:href="img/home/drinks/2.png" src="img/home/drinks/2.png" alt="">
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 class="drink-3" viewBox="0 0.001 274.467 332.262" enable-background="new 0 0.001 274.467 332.262"
+                                                 xml:space="preserve">
+                                            <g id="Layer_1_1_">
+                                                <g>
+                                                    <path class="glass" d="M233.495,139.953h-2.894v-14.869c-2.858,0.472-5.795,0.729-8.797,0.729c-2.154,0-4.354-0.146-6.505-0.371
+                                                        v183.771c-12.588,2.465-44.413,7.754-85.56,7.754c-40.988,0-72.535-5.277-85.031-7.742V137.967
+                                                        c-0.646,0.021-1.293,0.032-1.938,0.032c-4.649,0-9.112-0.487-13.358-1.43v178.844c0,3.522,2.412,6.6,5.84,7.434
+                                                        c1.58,0.385,39.322,9.416,94.49,9.416c55.149,0,93.396-9.025,94.989-9.41c3.439-0.826,5.865-3.896,5.865-7.438v-67.291h2.895
+                                                        c22.979,0,40.976-13.504,40.976-30.744v-46.688C274.467,153.454,256.473,139.953,233.495,139.953z M259.168,217.378
+                                                        c0,8.227-11.996,15.438-25.677,15.438h-2.894v-77.566h2.894c13.681,0,25.677,7.218,25.677,15.439V217.378z"/>
+                                                    <path class="glass" d="M80.332,115.097c21.549,10.061,42.022,12.211,55.608,12.211c22.406,0,44.667-5.562,66.229-16.539
+                                                        c1.235,0.33,2.737,0.691,4.578,1.104c3.971,0.886,9.803,1.938,15.062,1.938c21.067,0,38.209-15.541,38.209-34.645
+                                                        c0-15.697-11.293-29.045-27.479-33.271c-7.047-18.821-26.504-31.59-49.045-31.59c-10.082,0-19.836,2.623-28.175,7.492
+                                                        C143.742,8.194,125.273,0.001,105.297,0.001c-25.084,0-52.276,17.189-62.27,38.525C16.291,41.2,0.32,56.615,0.006,80.466
+                                                        c-0.18,13.713,4.041,25.334,12.209,33.609c7.695,7.797,18.265,11.918,30.562,11.918C54.5,125.999,67.119,122.333,80.332,115.097z
+                                                         M15.307,80.674c0.295-22.535,21.006-26.714,33.322-27.199c3.182-0.125,5.951-2.205,6.957-5.226
+                                                        c5.184-15.555,27.541-32.946,49.707-32.946c17.723,0,33.717,8.062,41.739,21.03c1.157,1.873,3.067,3.156,5.239,3.521
+                                                        c0.42,0.07,0.845,0.104,1.267,0.104c1.75,0,3.466-0.604,4.839-1.727c6.814-5.562,15.734-8.629,25.109-8.629
+                                                        c17.082,0,32.091,10.41,35.688,24.756c0.758,3.025,3.271,5.289,6.364,5.721c10.937,1.521,19.181,9.726,19.181,19.088
+                                                        c0,10.666-10.277,19.347-22.91,19.347c-6.148,0-14.928-2.254-17.281-3.01c-0.938-0.41-1.979-0.615-3.039-0.615
+                                                        c-1.311,0-2.639,0.317-3.768,0.949c-20.17,10.729-40.953,16.172-61.771,16.172c-12.469,0-31.479-2.045-51.262-11.791
+                                                        c-1.564-0.771-2.805-1.381-4.678-1.381c-1.367,0-2.728,0.37-3.904,1.067c-11.945,7.062-23.475,10.793-33.326,10.793
+                                                        c-8.111,0-14.914-2.549-19.672-7.365C17.877,98.036,15.182,90.203,15.307,80.674z"/>
+                                                </g>
+                                            </g>
+                                            <g id="Layer_2">
+                                                <path class="drink-fluid" fill="#0ACFAE" d="M135.942,139.308c-13.506,0-33.625-1.969-55.196-10.918
+                                                    c-8.176,3.979-16.209,6.729-24.033,8.236v142.556v20c15.176,2.492,41.209,5.777,73.031,5.777c32.008,0,58.271-3.303,73.562-5.799
+                                                    v-20V134.163v-10.58C181.387,134.017,158.75,139.308,135.942,139.308z M82.557,275.96c0,3.312-2.688,6-6,6s-6-2.688-6-6V162.553
+                                                    c0-3.312,2.688-6,6-6s6,2.688,6,6V275.96z"/>
+                                            </g>
+                                            <image xlink:href="img/home/drinks/3.png" src="img/home/drinks/3.png" alt="">
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 200.828 118.333" enable-background="new 0 0 200.828 118.333"
+                                                 xml:space="preserve" class="drink-4">
+                                            <g id="Layer_1">
+                                                <path class="glass" d="M192.574,23.67c-6.729-5.667-15.686-6.591-21.523-6.474c0.523-2.691,0.811-4.338,0.855-4.59l0.094-0.55
+                                                    V11.5C172,5.159,166.841,0,160.5,0h-149C5.159,0,0,5.159,0,11.5v0.505l0.078,0.499c0.163,1.045,4.094,25.897,12.414,51.193
+                                                    c11.925,36.254,26.844,54.637,44.342,54.637h60c14.045,0,26.227-13.213,37.051-40.256c1.623,0.121,3.539,0.212,5.664,0.212
+                                                    c8.896,0,21.342-1.583,30.293-9.094c7.289-6.116,10.986-14.837,10.986-25.92C200.828,32.816,196.339,26.841,192.574,23.67z
+                                                     M116.833,105.333h-60c-10.92,0-22.266-16.183-31.948-45.565C18.363,39.976,14.555,19.899,13.345,13h145.27
+                                                    c-1.334,7.002-5.41,27.017-11.912,46.756C133.152,100.892,121.3,105.333,116.833,105.333z M181.511,59.215
+                                                    c-5.992,5.046-15.682,6.178-22.955,6.077c0.178-0.532,0.357-1.055,0.535-1.596c3.963-12.045,7.018-23.982,9.15-33.293
+                                                    c3.617-0.43,11.584-0.5,15.984,3.232c2.424,2.055,3.602,5.208,3.602,9.64C187.828,50.423,185.761,55.636,181.511,59.215z"/>
+                                            </g>
+                                            <g id="Layer_2">
+                                                <g>
+                                                    <path class="drink-fluid" d="M34.415,37.167h101.333c0,0-11.334,52.667-18.666,52.667c-7.334,0-51.334,0-60,0
+                                                        S34.415,37.167,34.415,37.167z"/>
+                                                </g>
+                                            </g>
+                                            <image xlink:href="img/home/drinks/4.png" src="img/home/drinks/4.png" alt="">
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                class="drink-5" viewBox="0 0 187 315.833" enable-background="new 0 0 187 315.833" xml:space="preserve">
+                                            <g id="Layer_1">
+                                                <path class="glass" d="M187,120.833h-10.232c-9.681-30.124-34.713-52.389-65.012-58.98v13.354
+                                                    c23.237,5.988,42.486,22.881,51.236,45.626H100V47.275l22.099-37.472c1.824-3.093,0.796-7.078-2.297-8.901
+                                                    c-3.089-1.822-7.077-0.796-8.9,2.298L87,43.727v77.105H23.007c9.06-23.549,29.379-40.817,53.723-46.213V61.36
+                                                    C45.322,67.25,19.178,89.891,9.235,120.833H0v54h11.164l27.995,141h109.756l25.996-141H187V120.833z M174,161.833H13v-28h161
+                                                    V161.833z M138.093,302.833H49.831l-25.414-128h137.275L138.093,302.833z"/>
+                                            </g>
+                                            <g id="Layer_2">
+                                                <path class="drink-fluid" d="M39.655,185.499l19.428,106.668h70.937l17.569-106.668H39.655z M71.771,261.408
+                                                    c-0.171,0.029-0.34,0.053-0.507,0.067c-3.072,0.279-5.899-1.841-6.445-4.936l-6.764-33.333c-0.574-3.262,1.604-6.374,4.867-6.949
+                                                    c3.265-0.572,6.375,1.604,6.951,4.868l6.764,33.331C77.213,257.721,75.033,260.833,71.771,261.408z"/>
+                                            </g>
+                                            <image xlink:href="img/home/drinks/5.png" src="img/home/drinks/5.png" alt="">
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 294.376 340.341" enable-background="new 0 0 294.376 340.341"
+                                                 class="drink-6" xml:space="preserve">
+                                            <g id="Layer_1">
+                                                <g>
+                                                    <path class="glass" d="M250.777,33.437c-4.912-3.443-10.645-5.798-16.574-6.811c-0.562-0.097-1.133,0.061-1.566,0.427
+                                                        s-0.684,0.905-0.684,1.474v22.23c0,0.777,0.469,1.48,1.188,1.779c0.238,0.099,0.49,0.146,0.738,0.146
+                                                        c0.5,0,0.992-0.195,1.359-0.562l15.793-15.742c0.404-0.402,0.609-0.963,0.561-1.53S251.246,33.763,250.777,33.437z"/>
+                                                    <path class="glass" d="M220.201,26.624c-5.924,1.01-11.656,3.365-16.576,6.812c-0.467,0.326-0.764,0.844-0.812,1.411
+                                                        c-0.051,0.567,0.154,1.128,0.559,1.53l15.793,15.744c0.367,0.367,0.861,0.562,1.361,0.562c0.248,0,0.498-0.049,0.738-0.148
+                                                        c0.719-0.299,1.188-1,1.188-1.779V28.522c0-0.566-0.25-1.105-0.684-1.472S220.76,26.527,220.201,26.624z"/>
+                                                    <path class="glass" d="M227.201,0c-35.441,0-64.543,27.521-66.988,62.255h15.342c2.408-26.289,24.646-46.955,51.646-46.955
+                                                        c28.604,0,51.875,23.188,51.875,51.689c0,28.111-22.643,51.037-50.707,51.66c-1.318,5.242-3.107,10.328-5.504,15.174
+                                                        c1.436,0.092,2.879,0.155,4.336,0.155c37.041,0,67.175-30.052,67.175-66.989C294.376,30.051,264.242,0,227.201,0z"/>
+                                                    <path class="glass" d="M210.906,62.247c0.006-0.002,0.012,0,0.016,0c1.064,0,1.926-0.863,1.926-1.928
+                                                        c0-0.607-0.279-1.148-0.719-1.502l-15.645-15.596c-0.4-0.4-0.961-0.604-1.525-0.555c-0.566,0.049-1.08,0.344-1.408,0.809
+                                                        c-3.461,4.902-5.828,10.613-6.842,16.518c-0.098,0.56,0.059,1.134,0.424,1.568c0.367,0.434,0.908,0.686,1.475,0.686H210.906z"/>
+                                                    <path class="glass" d="M243.496,71.732c-0.777,0-1.482,0.47-1.779,1.19c-0.299,0.721-0.133,1.551,0.42,2.1l15.783,15.734
+                                                        c0.361,0.361,0.852,0.562,1.359,0.562c0.055,0,0.109-0.003,0.166-0.008c0.566-0.048,1.08-0.343,1.408-0.808
+                                                        c3.447-4.889,5.814-10.6,6.836-16.516c0.098-0.561-0.057-1.135-0.424-1.57c-0.365-0.434-0.904-0.685-1.473-0.685H243.496z"/>
+                                                    <path class="glass" d="M267.652,59.747c-1.039-5.816-3.387-11.438-6.799-16.271c-0.328-0.463-0.842-0.76-1.408-0.808
+                                                        c-0.559-0.051-1.123,0.154-1.525,0.554l-15.785,15.732c-0.551,0.551-0.717,1.381-0.42,2.102c0.299,0.721,1.002,1.191,1.781,1.191
+                                                        h22.301c0.004-0.002,0.01,0,0.014,0c1.066,0,1.928-0.863,1.928-1.928C267.738,60.121,267.707,59.929,267.652,59.747z"/>
+                                                    <path class="glass" d="M231.953,105.455c0,0.567,0.25,1.106,0.684,1.472c0.35,0.296,0.791,0.455,1.244,0.455
+                                                        c0.107,0,0.215-0.01,0.32-0.027c5.926-1.01,11.656-3.365,16.576-6.812c0.469-0.326,0.766-0.844,0.814-1.411
+                                                        s-0.156-1.128-0.561-1.531l-15.793-15.742c-0.551-0.55-1.377-0.713-2.098-0.415c-0.719,0.299-1.188,1.002-1.188,1.779V105.455z"/>
+                                                    <path class="glass" d="M212.312,74.255H7.65c-4.225,0-7.65,3.426-7.65,7.65c0,21.055,1.865,42.634,15.389,57.842
+                                                        c11.4,12.82,29.65,19.986,58.666,22.896v16.486c0,14.627,12.41,26.701,28.277,28.188v91.225l-54.359,18.695
+                                                        c-3.121,1.074-5.191,4.012-5.154,7.309c0.033,3.299,2.166,6.191,5.307,7.195c1.088,0.352,27.039,8.6,61.857,8.6
+                                                        c34.791,0,60.768-8.248,61.852-8.598c3.143-1.004,5.277-3.896,5.312-7.195c0.035-3.301-2.037-6.238-5.156-7.311l-54.357-18.695
+                                                        v-91.225c15.865-1.487,28.277-13.562,28.277-28.188v-16.486c29.016-2.91,47.264-10.076,58.666-22.896
+                                                        c13.523-15.208,15.387-36.787,15.387-57.842C219.963,77.681,216.537,74.255,212.312,74.255z M141.018,322.751
+                                                        c-10.443,1.529-20.855,2.305-31.035,2.305s-20.592-0.775-31.035-2.305l31.035-10.672L141.018,322.751z M137.701,147.997
+                                                        c-3.998,0.292-7.092,3.621-7.092,7.629v23.503c0,7.191-7.301,13.043-16.275,13.043h-8.701c-8.977,0-16.277-5.852-16.277-13.043
+                                                        v-23.503c0-4.008-3.096-7.337-7.094-7.629c-56.531-4.131-65.908-22.01-66.869-58.441h189.18
+                                                        C203.609,125.987,194.234,143.866,137.701,147.997z"/>
+                                                </g>
+                                            </g>
+                                            <g id="Layer_2">
+                                                <path class="drink-fluid" d="M28.699,103.239c1.324,8.777,3.821,14.413,7.952,18.548
+                                                    c7.508,7.515,22.334,11.844,46.658,13.621c1.492,0.089,11.433,0.187,26.846,0.187c15.412,0,25.354-0.098,26.882-0.189
+                                                    c24.288-1.774,39.114-6.104,46.623-13.618c4.13-4.135,6.627-9.77,7.951-18.548H28.699z"/>
+                                            </g>
+                                            <image xlinks:href="img/home/drinks/6.png" src="img/home/drinks/6.png" alt="">
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 177.795 323.15" enable-background="new 0 0 177.795 323.15"
+                                                 class="drink-7" xml:space="preserve">
+                                            <g id="Layer_1">
+                                                <g id="Layer_1_1_">
+                                                    <path class="glass" d="M153.149,310.962c1.107-2.58,1.144-5.44,0.166-8.028
+                                                        c-1.356-9.716-9.844-71.082-10.16-88.109c-0.104-5.568,5.082-21.197,10.513-37.56c10.795-32.529,25.188-75.91,24.065-111.023
+                                                        c-0.678-21.205-3.237-41.582-7.569-60.605L168.88,0H8.917L7.634,5.635C3.3,24.659,0.742,45.036,0.062,66.241
+                                                        c-1.123,35.113,13.273,78.494,24.068,111.023c5.43,16.361,10.615,31.99,10.512,37.56c-0.316,17.027-8.805,78.393-10.16,88.107
+                                                        c-0.977,2.588-0.943,5.448,0.164,8.026c1.328,3.103,4.02,5.402,7.379,6.306c0.795,0.215,18.285,4.848,47.713,5.735v0.15h8.531
+                                                        l0.588-0.004l0.669,0.004l8.533-0.006L98.058,323c29.43-0.889,46.92-5.521,47.707-5.731
+                                                        C149.134,316.361,151.828,314.058,153.149,310.962z M136.128,302.027c-7.66,1.508-23.934,4.062-46.639,4.149l-0.592,0.003
+                                                        l-0.592-0.003c-22.703-0.088-38.975-2.641-46.637-4.149c2.107-15.846,9.209-70.336,9.428-87.203
+                                                        c0.105-8.16-4.793-22.66-11.49-42.491C28.99,140.901,14.82,98.95,15.681,66.241c0.482-18.293,2.422-35.93,5.744-52.549h134.947
+                                                        c3.322,16.619,5.262,34.256,5.744,52.549c0.861,32.709-13.309,74.66-23.926,106.092c-6.697,19.831-11.596,34.331-11.49,42.491
+                                                        C126.919,231.691,134.021,286.183,136.128,302.027z"/>
+                                                </g>
+                                            </g>
+                                            <g id="Layer_2_1_">
+                                                <g id="Layer_2">
+                                                    <path class="drink-fluid" d="M150.121,66.557c-0.099-3.699-0.263-7.373-0.481-11.021H28.16c-0.221,3.648-0.385,7.322-0.482,11.021
+                                                        c-0.805,30.571,13.122,71.812,23.3,101.941c7.377,21.841,12.25,36.27,12.117,46.479c-0.17,13.221-4.148,46.762-7.223,70.901
+                                                        c8.398,0.904,19.338,1.681,32.434,1.726l0.592,0.002l0.592-0.002c13.096-0.045,24.036-0.82,32.436-1.726
+                                                        c-3.073-24.143-7.053-57.686-7.223-70.901c-0.134-10.211,4.739-24.64,12.121-46.491
+                                                        C136.996,138.374,150.925,97.129,150.121,66.557z M99.071,128.844c3.916,0,7.088,3.173,7.088,7.088
+                                                        c0,3.914-3.172,7.086-7.088,7.086c-3.912,0-7.086-3.172-7.086-7.086C91.985,132.017,95.159,128.844,99.071,128.844z
+                                                         M92.421,226.228c-3.912,0-7.086-3.174-7.086-7.088c0-3.912,3.174-7.086,7.086-7.086c3.914,0,7.088,3.174,7.088,7.086
+                                                        C99.509,223.054,96.335,226.228,92.421,226.228z M105.722,183.661c-3.912,0-7.087-3.172-7.087-7.086
+                                                        c0-3.915,3.175-7.087,7.087-7.087c3.916,0,7.09,3.172,7.09,7.087C112.812,180.489,109.638,183.661,105.722,183.661z
+                                                         M106.375,89.145c-3.915,0-7.089-3.172-7.089-7.086c0-3.913,3.174-7.087,7.089-7.087c3.913,0,7.087,3.174,7.087,7.087
+                                                        C113.461,85.973,110.288,89.145,106.375,89.145z M116.083,111.545c0-3.913,3.174-7.087,7.087-7.087
+                                                        c3.915,0,7.087,3.174,7.087,7.087c0,3.914-3.172,7.086-7.087,7.086C119.256,118.631,116.083,115.459,116.083,111.545z"/>
+                                                </g>
+                                            </g>
+                                            <image xlinks:href="img/home/drinks/7.png" src="img/home/drinks/7.png" alt="">
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="slider"></div>
+                            </div>
+                            <div class="col-xs-10 col-xs-offset-1 results">
+                                <p>The cost of <span class="int beverage-num">1</span> beverages could supply a family with <span class="int months-num">4</span> months of water.</p>
+                            </div>
+                            <div class="col-xs-8 col-xs-offset-2">
+                                <button>Give <span class="give-int">4</span> Months of Water Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-5 no-one-page">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>Spread the Word for Clean Water</h2>
+                            <h4>Share Your Facebook, Instagram, Twitter, and Vine 10 DAYS moments using the hashtag #10days!</h4>
+                        </div>
+                        <div class="col-xs-12 mobile">
+                            <ul>
+                                <li class="facebook"><span class="genericon genericon-facebook-alt"></span><a href="#">Add to Facebook</a></li>
+                                <li class="twitter"><span class="genericon genericon-twitter"></span><a href="#">Add to Twitter</a></li>
+                                <li class="resource-kit"><a href="#">View Resources Kit</a></li>
+                            </ul>
+                            <p class="hashtag">#10Days</p>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-1 not-mobile resource-bar padding-fix">
+                            <div class="profile-change">
+                                <div class="row">
+                                    <div class="col-sm-9 col-sm-offset-2">
+                                        <p class="arrow">Change your facebook profile photo to show your support for clean water!</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-3 col-sm-offset-1">
+                                        <img class="profile-pic-img" src="img/home/profile-pic.png" alt="">
+                                    </div>
+                                    <div class="col-sm-7 social">
+                                        <button class="download-profile-pic">Download Profile Picture</button>
+                                    </div>
+                                </div>
+                                <span class="flag facebook-flag"></span>
+                                <span class="flag twitter-flag"></span>
+                            </div>
+                            <button class="view-kit-button">Get Resources Kit</button>
+                        </div>
+                        <div class="col-sm-4 social-bar not-mobile">
+                            <div class="fb-like-box facebook-widget" data-href="https://www.facebook.com/the10days" data-width="400px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                            <!--
+<div class="row facebook-widget">
+                                <div class="top">
+                                    <img src="img/home/profile-pic.png" alt="" class="profile-img">
+                                    <div class="info">
+                                        <div class="top-info">
+                                            <span>10 Days</span>
+                                            <div class="action-buttons">
+                                                <button><span class="genericon genericon-facebook-alt"></span>Share</button>
+                                                <button><span class="genericon genericon-facebook-alt"></span>Like</button>
+                                            </div>
+                                        </div>
+                                        <div class="bottom-info">
+                                            <span>1,364 people like <a href="#">10 Days</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul>
+                                        <li><img src="img/home/liked-profile-pic.jpg" alt=""></li>
+                                        <li><img src="img/home/liked-profile-pic.jpg" alt=""></li>
+                                        <li><img src="img/home/liked-profile-pic.jpg" alt=""></li>
+                                        <li><img src="img/home/liked-profile-pic.jpg" alt=""></li>
+                                    </ul>
+                                </div>
+                            </div>
+-->
+                            <div class="row twitter-widget">
+                                <div class="col-xs-12">
+                                    <p class="icon"><span class="genericon genericon-twitter"></span></p>
+                                    <p class="tweet">We set a goal to raise enough money for 5 communities, apparently God had bigger plans. $147,760 for 7 communities!!</p>
+                                    <div class="bottom">
+                                        <p class="tweet-owner">@10Days</p>
+                                        <div class="actions">
+                                            <a href="#" class="retweet"><span class="glyphicon glyphicon-retweet"></span></a>
+                                            <a href="#"><span class="twitter-action-1"><img src="img/home/twitter-action-1.png" alt=""></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-6 no-one-page">
+                <div class="container-fluid">
+                    <div class="well-details">
+                    	Location of Water Point
+                    </div><!-- .well-details -->
+                    <div class="row progress-report">
+                        <h2>Our Progress Report</h2>
+                        <div class="row">
+                            <div class="col-xs-4 progress-item">
+                                <img src="img/home/project-icon.png" alt="">
+                                <p class="number">4</p>
+                                <p class="description">well projects completed</p>
+                            </div>
+                            <div class="col-xs-4 progress-item">
+                                <img src="img/home/money-icon.png" alt="">
+                                <p class="number">$50,000</p>
+                                <p class="description">total funds raised</p>
+                            </div>
+                            <div class="col-xs-4 progress-item">
+                                <img src="img/home/water-icon.png" alt="">
+                                <p class="number">10,000</p>
+                                <p class="description">people with clean water</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row map">
+                        <!--
+<div class="col-xs-12 col-md-4 location">
+                            <div class="image"></div>
+                            <div class="content">
+                                <p><span>GPS: </span>12.983667, -1.955139</p>
+                                <p><span>Completed: </span>August 8, 2014</p>
+                                <button>Learn How Wells Are Built</button>
+                            </div>
+                        </div>
+-->
+                        <div class="col-xs-12 map-section">
+                            <img class="ruhango-map" src="img/ruhango.jpg" alt=""/>
+                            <a href="#Kavuma" class="map-wells well-kavuma"><img src="img/pin.png" alt=""/>
+                              <div class="well-html">
+                              	<img src="img/10days-well.jpg" alt=""/>
+                              </div><!-- .well-html -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-7 no-one-page">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h3>The Last Day</h3>
+                        <p>Celebrating the end of the 10 Days and Water for Rwanda.</p>
+                        <div class="col-xs-10 col-xs-offset-1 foundation">
+                            <img src="img/home/day-11-ribbon.png" alt="">
+                            <p class="name">Donald Miller <span>&</span><br />John Mark Mcmillan</p>
+                            <div class="little-border"></div>
+                            <p class="time">Live Simulcast Streaming Here<br />7:30 pm CST 11/19/14</p>
+                            <button>Register</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide-8 no-one-page">
+                <div class="container-fluid">
+                    <div class="row cta">
+                        <div class="col-xs-12">
+                            <h2>Join Us</h2>
+                            <p>Look, we’re going to miss coffee too. The undeniable reality is that our choices matter. Take the pledge and see how a simple sacrifice will make a difference for our friends in Ruhango. </p>
+                            <br />
+                            <button>I want to help.</button>
+                        </div>
+                    </div>
+                    <div class="row footer">
+                        <ul class="social">
+                            <li><span class="genericon genericon-facebook-alt"></span></li>
+                            <li><span class="genericon genericon-twitter"></span></li>
+                            <li><span class="genericon genericon-youtube"></span></li>
+                            <li><span class="email">&#224;</span></li>
+                            <li><span class="hash">#10days</span></li>
+                        </ul>
+                        <img src="img/base/logo.jpg" alt="">
+                        <p class="copyright"><a href="#">PRIVACY POLICY</a> | &copy; Living Water Interational</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <script src="bower_components/jquery-ui/ui/slider.js"></script>
+        <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/vendor/jquery.onepage-scroll.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/base.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

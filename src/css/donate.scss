@@ -1,0 +1,339 @@
+@import 'base';
+
+body {
+	background-image: url("../img/home/button-overlay1.jpg");
+}
+
+.footer {
+	img {
+		display: inline
+	}
+}
+
+.arrow {
+	position: absolute;
+	overflow: hidden;
+	height: 7px;
+	width: 18px;
+	top: 35px;
+	right: 10px;
+
+	&:after {
+		position: absolute;
+		content: '';
+		display: block;
+		width: 14px;
+		height: 14px;
+		background-color: #b9b9b9;
+		top: -10px;
+		right: 2px;
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+	}
+}
+
+.main-section {
+	background-image:url('../img/donate/bg.jpg');
+	background-size: cover;
+	color:#000;
+
+	.left-section {
+		text-align: center;
+	}
+	
+	h1 {
+		font-family: 'Open Sans';
+		font-size:22px;
+		color:#232927;
+		font-weight: 300;
+		letter-spacing: 2px;
+		span {
+			font-family: 'univers';
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			line-height: 1.8em;
+		}
+	}
+
+	h2 {
+		font-family: 'Open Sans';
+		font-size:16px;
+		line-height: 1.8em;
+		color:#6d6e73;
+		margin-top:0;
+		letter-spacing: 1px;
+	}
+
+	form {
+		background-image: url('../img/donate/form-bg.png');
+		padding:31px 34px;
+		margin-top:30px;
+		box-shadow: 0 0 4px #939393 inset;
+
+		.form-group {
+			position: relative;
+		}
+
+		.form-control {
+			box-shadow: none;
+			border: 1px solid #c7c6c4;
+			-webkit-appearance: none;
+			font-size: 26px;
+			border-radius: 0;
+			height: 74px;
+			padding: 6px 12px 0;
+			font-size:16px;
+		}
+
+		.form-message {
+			margin-top:20px;
+			color:#6c6d71;
+			font-family: 'Open Sans';
+			font-weight: 300;
+			letter-spacing: 1px;
+
+			span {
+				font-weight: 600;
+			}
+		}
+
+		.current-donation {
+			.number {
+				height: 74px;
+				background-color: #fff;
+				border: 1px solid #c6c5c3;
+				font-size: 36px;
+				padding-top: 16px;
+				.dollar {
+					color:#70cfaf;
+				}
+			}
+		}
+
+		input {
+			text-align: center;
+			border-radius: 0;
+		}
+
+		button {
+			width:100%;
+			border-radius: 0;
+			border:0;
+			background-image: url('../img/base/overlay1.jpg');
+			color:#fff;
+			font-family: 'Open Sans';
+			font-size: 20px;
+			padding:18px;
+			
+			span {
+				font-size: 32px;
+				margin-top: -2px;
+			}
+
+			&:hover {
+				color:#fff;
+			}
+		}
+	}
+}
+
+#payment-info {
+
+	.modal-dialog {
+		max-width: 430px;
+	}
+
+	.modal-content {
+		background-color: #d2d4d3;
+		font-family: 'Open Sans';
+
+		.modal-header, .modal-footer {
+			border:0;
+		}
+
+		.modal-header {
+			padding:0;
+			.close {
+				position: absolute;
+				right: -60px;
+				top: 10px;
+
+				span {
+					text-shadow: none;
+					font-size: 32px;
+					color: #d2d4d3;
+				}
+			}
+		}
+
+		.modal-body {
+			select {
+				-webkit-appearance:none;
+			}
+			.heading {
+				text-align: center;
+				color: #101715;
+				font-family: "univers";
+				font-weight: 600;
+				font-size: 35px;
+				margin-bottom: 0;
+				margin-top:20px;
+			}
+			.form-group {
+				margin-bottom: 0;
+				border:2px solid #c8c7c4;
+				border-bottom:0;
+				-webkit-transition: all 0.3s;
+				-moz-transition: all 0.3s;
+				-o-transition: all 0.3s;
+				transition: all 0.3s;
+
+				input, .form-control {
+					border: 0;
+					border-radius: 0;
+					padding:4px 0 0 75px;
+					height: 68px;
+					opacity:0.4;
+				}
+
+				.icon {
+					position: absolute;
+					font-family: 'icon-worksregular';
+					font-size: 24px;
+					text-align: center;
+					color: #555;
+					width: 60px;
+					height: 69px;
+					padding-top: 20px;
+					border-right: 2px solid #908F84;
+					-webkit-transition: all 0.3s;
+					-moz-transition: all 0.3s;
+					-o-transition: all 0.3s;
+					transition: all 0.3s;
+				}
+
+				&.active {
+					input, .form-control {
+						&:focus {
+							border:2px solid #78d3b6;
+							box-shadow: none;
+						}
+					}
+					.icon {
+						border-right: 2px solid #78d3b6;
+						color: #78d3b6;
+					}
+				}
+				
+				.address, .apt,
+				.city, .zip {
+					display: inline-block;
+				}
+
+				.address {
+					width:68.9%;
+				}
+
+				.apt {
+					width:30%;
+				}
+
+				.city {
+					width:58.9%;
+				}
+
+				.zip {
+					width:40%;
+				}
+			}
+
+			.no-icon {
+				position: relative;
+
+				.form-control {
+					padding: 4px 0 0 25px;
+				}
+			}
+		}
+
+		.modal-footer {
+			button {
+				color: #fff;
+				width: 100%;
+				background-image: url("../img/base/overlay1.jpg");
+				font-size: 24px;
+				padding: 20px;
+				font-weight: 300;
+				border: 0;
+
+				span {
+					font-size: 32px;
+					margin-top: 2px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width:768px) {
+	.main-section {
+		padding-top:150px;
+		padding-bottom:100px;
+
+		h1 {
+			font-size:48px;
+			padding-bottom: 10px;
+
+			span {
+				font-size: 57px;
+			}
+		}
+
+		form {
+
+			.arrow {
+				right:30px;
+			}
+
+			.form-control {
+				padding: 6px 10px 0;
+			}
+		}
+	}
+
+	#payment-info {
+		.modal-dialog {
+			margin-top: 120px;
+		}
+	}
+}
+
+@media (min-width:1200px) {
+	.main-section {
+		.left-section {
+			text-align: left;
+		}
+
+		.right-section {
+			padding-bottom: 562px;
+		}
+
+		h1 {
+			padding-top:60px;
+		}
+
+		form {
+
+			.form-control {
+				padding: 6px 30px 0;
+			}
+
+			.form-message {
+				margin: 18px 0 28px;
+			}
+		}
+	}
+}
