@@ -24,22 +24,27 @@
 			topNav.addClass('pushed');
 			mainSection.addClass('pushed');
 			footer.addClass('pushed');
-			if ($(window).width() < 1220) {
+			if ($(window).width() < 1220 && $(window).width() > 768 ) {
 				$('.navbar .buttons').fadeOut(100);
 			}
 		} else {
-			closeSidebar();
-			setTimeout(function() {
-				$('.navbar .buttons').fadeIn();
-			}, 200);
+			closeSidebar();			
+			if ($(window).width() < 1220 && $(window).width() > 768 ) {
+				setTimeout(function() {
+				  $('.navbar .buttons').fadeIn();
+        }, 200);
+		  }
+
 		}
 	});
 
 	$('.close').on('click touchend', function(e) {
 		e.preventDefault();
 		closeSidebar();
-		setTimeout(function() {
-			$('.navbar .buttons').fadeIn();
-		}, 200);
+		if ($(window).width() < 1220 && $(window).width() > 768 ) {
+  		setTimeout(function() {
+  			$('.navbar .buttons').fadeIn();
+  		}, 200);
+		}
 	});
 })();

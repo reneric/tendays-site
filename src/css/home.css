@@ -190,7 +190,14 @@ select, option, textarea, input[type="text"], input[type="password"], input[type
   background-color: #232928;
   color: #fff; }
   #sidebar a {
-    color: #fff; }
+    color: #bbb; }
+   #sidebar a:hover {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all .1s ease-in-out;
+		-moz-transition: all .1s ease-in-out;
+		-o-transition: all .1s ease-in-out;
+		transition: all .1s ease-in-out; }
   #sidebar .close {
     color: #A2ACAA;
     font-size: 32px;
@@ -198,12 +205,13 @@ select, option, textarea, input[type="text"], input[type="password"], input[type
     margin: 30px; }
   #sidebar .pages {
     list-style: none;
-		padding-top: 70px;
+		padding-top: 120px;
 		font-weight: 300;
-		letter-spacing: 3px; }
+		letter-spacing: 3px;
+		padding-left: 50px; }
     #sidebar .pages li {
       font-size: 27px;
-      margin: 0 0 10px; }
+      margin: 0 0 15px; }
   #sidebar .bottom {
     position: absolute;
     bottom: 10px;
@@ -259,7 +267,7 @@ select, option, textarea, input[type="text"], input[type="password"], input[type
   .footer p {
     color: #6d6e71; }
   .footer img {
-   /*  display: none; */
+    display: none; 
     padding: 15px 0; }
 
 
@@ -393,7 +401,8 @@ h2 {
       margin-right: 10px; }
    
     .slide-1 ul .watch {
-      background-image: url("../img/home/button-overlay1.jpg");
+   /*    background-image: url("../img/home/button-overlay1.jpg"); */
+   		background-color: #fff;
       -webkit-transition: -webkit-transform .1s;
 			-moz-transition: -moz-transform .1s;
 			transition: transform .1s;
@@ -402,6 +411,7 @@ h2 {
         color: #242a28;
         display: block;
         padding-top: 17px;
+        padding-right: 10px;
         height: 100%;
         -webkit-transition: all .3s ease-in-out;
 				-moz-transition: all .3s ease-in-out;
@@ -420,12 +430,14 @@ h2 {
      }
      
     .slide-1 ul .pledge {
-      background-image: url("../img/home/button-overlay2.jpg"); }
+    	background-color: #70d0af;
+      /* background-image: url("../img/home/button-overlay2.jpg"); */ }
     
     .slide-1 ul .pledge a{
     	display: block;
         display: block;
         padding-top: 17px;
+        padding-right: 10px;
         height: 100%;
         -webkit-transition: all .3s ease-in-out;
 				  -moz-transition: all .3s ease-in-out;
@@ -446,7 +458,7 @@ h2 {
 
     
     .slide-1 .pledge:hover {
-		    background-image: url("../img/home/button-overlay1.jpg") !important;
+/* 		    background-image: url("../img/home/button-overlay1.jpg") !important; */
 		    background-color: #fff !important;
 		    color: #444;
 				text-decoration: none;
@@ -794,7 +806,8 @@ h2 {
     overflow: hidden; }
 
 .slide-4 {
-  background-image: url("../img/home/button-overlay1.jpg");
+  /* background-image: url("../img/home/button-overlay1.jpg") */;
+  background-color: #fff;
   text-align: center; }
   .slide-4 h3 {
     font-weight: 500;
@@ -1918,6 +1931,16 @@ and (max-device-width : 568px){
 .slide-1 img{
 	margin: 20px 0;
 }
+
+.slide-1 ul .watch, .slide-1 ul .pledge{
+	width: 280px;
+	margin: 0 auto;
+	font-size: 19px;
+	margin-top: 10px;
+	padding-bottom: 61px;
+	padding-right: 10px;	
+}
+
 
 /*SLIDE 2 ------------------------------------------------ */
 .slide-2 form .add-account, .slide-2 form .facebook{

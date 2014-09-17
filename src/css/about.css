@@ -303,10 +303,20 @@ body {
   padding: 0; }
   .modal .modal-body .container-fluid {
     padding: 0; }
-.modal .photo-container {
-  background-image: url("../img/about/modal-bg.jpg");
+.modal .photo-container  {
+  background-image: url("../img/about/modal-moses.jpg");
   background-size: cover;
   height: 300px; }
+#myModal3 .photo-container  {
+  background-image: url("../img/about/modal-phillip.jpg");
+  background-size: cover; }
+#myModal2 .photo-container  {
+  background-image: url("../img/about/modal-frank.jpg");
+  background-size: cover; }
+#myModal4 .photo-container  {
+  background-image: url("../img/about/modal-MELCHIZEDEK.jpg");
+  background-size: cover; }
+
 .modal .content {
   float: right;
   padding: 0 40px 30px; }

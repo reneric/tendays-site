@@ -202,12 +202,12 @@
       var actualVideoHeight = videoRatio * vidWrapperWidth;
       
       var videoTestRatio = vidWrapperHeight - actualVideoHeight;
-      console.log(videoTestRatio);
+      //console.log(videoTestRatio);
       
-      if (videoTestRatio > 0 && videoTestRatio < 80) {
+      if (videoTestRatio > 0 && videoTestRatio <= 70) {
           meet_people.find('.video-js').css({'width':'120%','left':'-10%'});
       } 
-      else if (videoTestRatio > 80){ 
+      else if (videoTestRatio > 70){ 
         meet_people.find('.video-js').css({'width':'140%','left':'-20%'});
       } 
       else {
